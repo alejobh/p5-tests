@@ -1,12 +1,14 @@
-let num = 60;
-let mx = [];
-let my = [];
+"use strict";
+
+var num = 60;
+var mx = [];
+var my = [];
 
 function setup() {
   createCanvas(720, 400);
   noStroke();
   fill(255, 153);
-  for (let i = 0; i < num; i++) {
+  for (var i = 0; i < num; i++) {
     mx.push(i);
     my.push(i);
   }
@@ -17,13 +19,13 @@ function draw() {
 
   // Cycle through the array, using a different entry on each frame.
   // Using modulo (%) like this is faster than moving all the values over.
-  let which = frameCount % num;
+  var which = frameCount % num;
   mx[which] = mouseX;
   my[which] = mouseY;
 
-  for (let i = 0; i < num; i++) {
+  for (var i = 0; i < num; i++) {
     // which+1 is the smallest (the oldest in the array)
-    let index = (which + 1 + i) % num;
+    var index = (which + 1 + i) % num;
     ellipse(mx[index], my[index], i, i);
   }
 }
