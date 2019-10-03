@@ -1,6 +1,7 @@
 {
   "name": "p5-manager",
   "projects": [
-    "first-test"
+    "first-test",
+    "second-test"
   ]
 }
