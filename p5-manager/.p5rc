@@ -2,6 +2,7 @@
   "name": "p5-manager",
   "projects": [
     "first-test",
-    "second-test"
+    "second-test",
+    "waves"
   ]
 }
