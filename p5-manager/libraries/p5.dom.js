@@ -68,6 +68,10 @@
    * </code></div>
    *
    */
+  
+  
+  
+  
   p5.prototype.select = function(e, p) {
     p5._validateParameters('select', arguments);
     var res = null;
@@ -498,7 +502,8 @@
     var self = addElement(elt, this);
     self.checked = function() {
       var cb = self.elt.getElementsByTagName('input')[0];
-      if (cb) {
+      if (cb==0){}
+      else{
         if (arguments.length === 0) {
           return cb.checked;
         } else if (arguments[0]) {
