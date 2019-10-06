@@ -89,13 +89,15 @@
       res = container.getElementById(e);
     } else {
       res = container.getElementsByTagName(e);
-      if (res.length) {
+      if (res.length==0){}
+      else{
         res = res[0];
       } else {
         res = null;
       }
     }
-    if (res) {
+    if (res==0){}
+    else{
       return this._wrapElement(res);
     } else {
       return null;
